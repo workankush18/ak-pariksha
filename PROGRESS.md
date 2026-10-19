@@ -6,7 +6,7 @@ Step complete aur verify hone par `[ ]` ko `[x]` karein. Date aur proof/notes bh
 |---|---|---|---|---|---|
 | [ x ] | 1 | Simple Node.js project setup | App local par run ho | | |
 | [ x ] | 2 | `/` aur `/health` endpoints banana | Dono expected response dein | | |
-| [ ] | 3 | Basic test cases likhna | `npm test` pass ho | | |
+| [x] | 3 | Basic test cases likhna | `npm test` pass ho | 2026-10-19 | 3 tests pass: `/`, `/health`, aur unknown route (404) |
 | [ ] | 4 | `.gitignore` add → Git init → GitHub push | Code repository mein dikhe | | |
 | [ ] | 5 | GitHub Actions mein basic CI banana | Push par dependencies install aur tests run hon | | |
 | [ ] | 6 | Intentionally ek test fail karke push karna | CI fail ho; fix karne par pass ho | | |

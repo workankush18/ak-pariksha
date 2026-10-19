@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
   res.send('Jai mata Shaliii');
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+console.log(require.main === module,"require.main === module");
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+}
+
+module.exports = app;
