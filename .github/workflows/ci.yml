@@ -1,4 +1,4 @@
-name: CI
+name: AK-CI
 
 on:
   push:
@@ -43,7 +43,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-result
+          name: test-ak-result
           path: Result
           if-no-files-found: error
 
