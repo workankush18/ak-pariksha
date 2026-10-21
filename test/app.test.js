@@ -31,13 +31,7 @@ test('GET / returns the welcome message', async () => {
   assert.equal(await response.text(), 'Jai mata Shaliii');
 });
 
-test('GET /health returns a healthy JSON response', async () => {
-  const response = await fetch(`${baseUrl}/health`);
 
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get('content-type'), /application\/json/);
-  assert.deepEqual(await response.json(), { status: 'ok' });
-});
 
 test('GET /missing returns 404 for an unknown route', async () => {
   const response = await fetch(`${baseUrl}/missing`);
@@ -45,4 +39,12 @@ test('GET /missing returns 404 for an unknown route', async () => {
   assert.equal(response.status, 404);
   await response.text();
 
+});
+
+test('GET /health returns a healthy JSON response', async () => {
+  const response = await fetch(`${baseUrl}/health`);
+
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get('content-type'), /application\/json/);
+  assert.deepEqual(await response.json(), { status: 'ok' });
 });

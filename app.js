@@ -5,7 +5,7 @@ const morgan = require('morgan');
 
 app.use(morgan('dev'));
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
+  res.status(200).json({ status: 'okay' });
 });
 
 app.get('/', (req, res) => {
