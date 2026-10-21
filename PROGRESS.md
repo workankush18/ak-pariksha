@@ -8,8 +8,8 @@ Step complete aur verify hone par `[ ]` ko `[x]` karein. Date aur proof/notes bh
 | [ x ] | 2 | `/` aur `/health` endpoints banana | Dono expected response dein | | |
 | [x] | 3 | Basic test cases likhna | `npm test` pass ho | 2026-10-19 | 3 tests pass: `/`, `/health`, aur unknown route (404) |
 | [ x] | 4 | `.gitignore` add → Git init → GitHub push | Code repository mein dikhe | | |
-| [ ] | 5 | GitHub Actions mein basic CI banana | Push par dependencies install aur tests run hon | | |
-| [ ] | 6 | Intentionally ek test fail karke push karna | CI fail ho; fix karne par pass ho | | |
+| [ x] | 5 | GitHub Actions mein basic CI banana | Push par dependencies install aur tests run hon | | |
+| [ x] | 6 | Intentionally ek test fail karke push karna | CI fail ho; fix karne par pass ho | | |
 | [ ] | 7 | `Dockerfile` aur `.dockerignore` banana | Docker image build ho | | |
 | [ ] | 8 | Container run aur port mapping check karna | Browser se container wali app chale | | |
 | [ ] | 9 | Image tag karke manually Docker Hub push karna | Image registry mein dikhe | | |
