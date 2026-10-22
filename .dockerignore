@@ -1,0 +1,12 @@
+node_modules
+.git
+.github
+.env
+.env.*
+*.log
+coverage
+test
+test_task.js
+Result
+*.md
+.DS_Store
