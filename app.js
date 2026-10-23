@@ -7,7 +7,9 @@ app.use(morgan('dev'));
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
-
+app.get('/health1', (req, res) => {
+  res.status(200).json({ status: 'ok1' });
+});
 app.get('/', (req, res) => {
   res.send('Jai mata Shaliii');
 });
